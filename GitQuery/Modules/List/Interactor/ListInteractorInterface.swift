@@ -12,6 +12,3 @@ protocol ListInteractorInput {
     func sendNetworkRequest(query: String)
 }
 
-protocol ListInteractorOutput {
-    func responseDataFetched()
-}

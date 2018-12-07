@@ -25,11 +25,26 @@ class AppDependencies {
         let listPresenter = ListPresenter()
         let listInteractor = ListInteractor()
         
+        let detailWireframe = DetailWireframe()
+        let detailPresenter = DetailPresenter()
+        let detailInteractor = DetailInteractor()
+        
         listWireframe.rootWireframe = rootWireframe
         listWireframe.listPresenter = listPresenter
-
+        listWireframe.detailWireframe = detailWireframe
+        
         listPresenter.listWireframe = listWireframe
         listPresenter.listInteractor = listInteractor
         
+        listInteractor.listPresenter = listPresenter
+        
+        //detail module connections
+        detailPresenter.detailWireframe = detailWireframe
+        detailPresenter.detailInteractor = detailInteractor
+        
+        detailWireframe.rootWireframe = rootWireframe
+        detailWireframe.detailPresenter = detailPresenter
+        
+        detailInteractor.detailPresenter = detailPresenter
     }
 }

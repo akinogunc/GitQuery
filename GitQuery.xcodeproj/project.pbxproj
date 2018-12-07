@@ -26,6 +26,20 @@
 		F4B82FBC21B9AE6300266E42 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FBB21B9AE6300266E42 /* ListPresenter.swift */; };
 		F4B82FBF21B9C2F800266E42 /* ListInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FBE21B9C2F800266E42 /* ListInteractorInterface.swift */; };
 		F4B82FC121B9D05400266E42 /* RepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FC021B9D05400266E42 /* RepositoryItem.swift */; };
+		F4B82FC321BA567F00266E42 /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FC221BA567F00266E42 /* ListViewInterface.swift */; };
+		F4B82FC521BA695E00266E42 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FC421BA695E00266E42 /* RepositoryCell.swift */; };
+		F4B82FC921BA80E200266E42 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4B82FC821BA80E200266E42 /* Metropolis-Medium.otf */; };
+		F4B82FD721BA93C800266E42 /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FD621BA93C800266E42 /* DetailWireframe.swift */; };
+		F4B82FD921BA943E00266E42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FD821BA943E00266E42 /* DetailViewController.swift */; };
+		F4B82FDB21BA948A00266E42 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FDA21BA948A00266E42 /* DetailPresenter.swift */; };
+		F4B82FDD21BA9C1D00266E42 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FDC21BA9C1D00266E42 /* DetailInteractor.swift */; };
+		F4B82FDF21BA9C3000266E42 /* DetailNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FDE21BA9C3000266E42 /* DetailNetworkManager.swift */; };
+		F4B82FE121BA9C5600266E42 /* DetailViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FE021BA9C5600266E42 /* DetailViewInterface.swift */; };
+		F4B82FE321BA9C6C00266E42 /* DetailInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FE221BA9C6C00266E42 /* DetailInteractorInterface.swift */; };
+		F4B82FE521BA9C7D00266E42 /* DetailPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FE421BA9C7D00266E42 /* DetailPresenterInterface.swift */; };
+		F4B82FE721BA9F8200266E42 /* ForkOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FE621BA9F8200266E42 /* ForkOwner.swift */; };
+		F4B82FEA21BAA60300266E42 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FE921BAA60300266E42 /* ImageViewExtension.swift */; };
+		F4B82FEC21BAA7F500266E42 /* ForkOwnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FEB21BAA7F500266E42 /* ForkOwnerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +91,20 @@
 		F4B82FBB21B9AE6300266E42 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		F4B82FBE21B9C2F800266E42 /* ListInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorInterface.swift; sourceTree = "<group>"; };
 		F4B82FC021B9D05400266E42 /* RepositoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItem.swift; sourceTree = "<group>"; };
+		F4B82FC221BA567F00266E42 /* ListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		F4B82FC421BA695E00266E42 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		F4B82FC821BA80E200266E42 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		F4B82FD621BA93C800266E42 /* DetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		F4B82FD821BA943E00266E42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4B82FDA21BA948A00266E42 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		F4B82FDC21BA9C1D00266E42 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		F4B82FDE21BA9C3000266E42 /* DetailNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNetworkManager.swift; sourceTree = "<group>"; };
+		F4B82FE021BA9C5600266E42 /* DetailViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewInterface.swift; sourceTree = "<group>"; };
+		F4B82FE221BA9C6C00266E42 /* DetailInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorInterface.swift; sourceTree = "<group>"; };
+		F4B82FE421BA9C7D00266E42 /* DetailPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterInterface.swift; sourceTree = "<group>"; };
+		F4B82FE621BA9F8200266E42 /* ForkOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkOwner.swift; sourceTree = "<group>"; };
+		F4B82FE921BAA60300266E42 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		F4B82FEB21BAA7F500266E42 /* ForkOwnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkOwnerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,11 +183,9 @@
 		F4B82F7421B9967B00266E42 /* GitQuery */ = {
 			isa = PBXGroup;
 			children = (
+				F4B82FE821BAA5D500266E42 /* Common */,
 				F4B82FA321B9977800266E42 /* Modules */,
-				F4B82F7921B9967B00266E42 /* Main.storyboard */,
-				F4B82F7C21B9967C00266E42 /* Assets.xcassets */,
-				F4B82F7E21B9967C00266E42 /* LaunchScreen.storyboard */,
-				F4B82F8121B9967C00266E42 /* Info.plist */,
+				F4B82FCA21BA81FC00266E42 /* Resources */,
 			);
 			path = GitQuery;
 			sourceTree = "<group>";
@@ -189,7 +215,6 @@
 				F4B82FA521B997A400266E42 /* Detail */,
 				F4B82F7521B9967B00266E42 /* AppDelegate.swift */,
 				F4B82FB121B99FA600266E42 /* AppDependencies.swift */,
-				F4B82FAF21B99F2600266E42 /* RootWireframe.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -209,6 +234,11 @@
 		F4B82FA521B997A400266E42 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F4B82FD121BA932F00266E42 /* View */,
+				F4B82FD221BA933500266E42 /* Interactor */,
+				F4B82FD321BA934800266E42 /* Presenter */,
+				F4B82FD421BA934F00266E42 /* Entity */,
+				F4B82FD521BA935C00266E42 /* Router */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -253,8 +283,76 @@
 			isa = PBXGroup;
 			children = (
 				F4B82F7721B9967B00266E42 /* ListViewController.swift */,
+				F4B82FC221BA567F00266E42 /* ListViewInterface.swift */,
+				F4B82FC421BA695E00266E42 /* RepositoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F4B82FCA21BA81FC00266E42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82F7921B9967B00266E42 /* Main.storyboard */,
+				F4B82F7E21B9967C00266E42 /* LaunchScreen.storyboard */,
+				F4B82F7C21B9967C00266E42 /* Assets.xcassets */,
+				F4B82FC821BA80E200266E42 /* Metropolis-Medium.otf */,
+				F4B82F8121B9967C00266E42 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4B82FD121BA932F00266E42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FD821BA943E00266E42 /* DetailViewController.swift */,
+				F4B82FE021BA9C5600266E42 /* DetailViewInterface.swift */,
+				F4B82FEB21BAA7F500266E42 /* ForkOwnerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4B82FD221BA933500266E42 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FDC21BA9C1D00266E42 /* DetailInteractor.swift */,
+				F4B82FE221BA9C6C00266E42 /* DetailInteractorInterface.swift */,
+				F4B82FDE21BA9C3000266E42 /* DetailNetworkManager.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4B82FD321BA934800266E42 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FDA21BA948A00266E42 /* DetailPresenter.swift */,
+				F4B82FE421BA9C7D00266E42 /* DetailPresenterInterface.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4B82FD421BA934F00266E42 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FE621BA9F8200266E42 /* ForkOwner.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F4B82FD521BA935C00266E42 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FD621BA93C800266E42 /* DetailWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F4B82FE821BAA5D500266E42 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4B82FE921BAA60300266E42 /* ImageViewExtension.swift */,
+				F4B82FAF21B99F2600266E42 /* RootWireframe.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B82FC921BA80E200266E42 /* Metropolis-Medium.otf in Resources */,
 				F4B82F8021B9967C00266E42 /* LaunchScreen.storyboard in Resources */,
 				F4B82F7D21B9967C00266E42 /* Assets.xcassets in Resources */,
 				F4B82F7B21B9967B00266E42 /* Main.storyboard in Resources */,
@@ -396,10 +495,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitQuery/Pods-GitQuery-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B82FB821B9A98E00266E42 /* ListNetworkManager.swift in Sources */,
+				F4B82FE121BA9C5600266E42 /* DetailViewInterface.swift in Sources */,
 				F4B82FBC21B9AE6300266E42 /* ListPresenter.swift in Sources */,
 				F4B82FB621B9A53600266E42 /* ListInteractor.swift in Sources */,
 				F4B82FC121B9D05400266E42 /* RepositoryItem.swift in Sources */,
@@ -475,8 +577,20 @@
 				F4B82FB221B99FA600266E42 /* AppDependencies.swift in Sources */,
 				F4B82F7821B9967B00266E42 /* ListViewController.swift in Sources */,
 				F4B82FBF21B9C2F800266E42 /* ListInteractorInterface.swift in Sources */,
+				F4B82FEA21BAA60300266E42 /* ImageViewExtension.swift in Sources */,
+				F4B82FE721BA9F8200266E42 /* ForkOwner.swift in Sources */,
+				F4B82FC521BA695E00266E42 /* RepositoryCell.swift in Sources */,
+				F4B82FD721BA93C800266E42 /* DetailWireframe.swift in Sources */,
 				F4B82F7621B9967B00266E42 /* AppDelegate.swift in Sources */,
+				F4B82FDB21BA948A00266E42 /* DetailPresenter.swift in Sources */,
 				F4B82FB021B99F2600266E42 /* RootWireframe.swift in Sources */,
+				F4B82FE521BA9C7D00266E42 /* DetailPresenterInterface.swift in Sources */,
+				F4B82FDF21BA9C3000266E42 /* DetailNetworkManager.swift in Sources */,
+				F4B82FDD21BA9C1D00266E42 /* DetailInteractor.swift in Sources */,
+				F4B82FEC21BAA7F500266E42 /* ForkOwnerCell.swift in Sources */,
+				F4B82FD921BA943E00266E42 /* DetailViewController.swift in Sources */,
+				F4B82FE321BA9C6C00266E42 /* DetailInteractorInterface.swift in Sources */,
+				F4B82FC321BA567F00266E42 /* ListViewInterface.swift in Sources */,
 				F4B82FBA21B9AE2300266E42 /* ListPresenterInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,7 +769,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFGPKV3K8S;
-				INFOPLIST_FILE = GitQuery/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitQuery/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,7 +788,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFGPKV3K8S;
-				INFOPLIST_FILE = GitQuery/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitQuery/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

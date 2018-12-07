@@ -13,7 +13,7 @@ class ListNetworkManager: NSObject {
 
     func networkRequestWithQuery(query: String, completion: @escaping (NSArray) -> Void){
         
-        let url = "https://api.github.com/search/repositories?q=" + query + "&page=1" + "&per_page=20"
+        let url = "https://api.github.com/search/repositories?q=" + query + "&page=1" + "&per_page=50"
         
         Alamofire.request(url).responseJSON { response in
             

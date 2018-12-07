@@ -10,12 +10,19 @@ import UIKit
 
 class ListPresenter: NSObject, ListPresenterInterface {
 
-    //var userInterface : ListViewInterface?
-    var listWireframe : ListWireframe?
-    var listInteractor : ListInteractorInput?
+    var listView : ListViewInterface!
+    var listWireframe : ListWireframe!
+    var listInteractor : ListInteractorInput!
 
     func searchQuery(query: String){
-        listInteractor?.sendNetworkRequest(query: query)
+        listInteractor.sendNetworkRequest(query: query)
     }
 
+    func repositoryItemsArrayFromQuery(items: [RepositoryItem]){
+        listView.showRepositoryItems(items: items)
+    }
+    
+    func showDetail(forkUrl: String, repositoryName: String) {
+        listWireframe.pushDetailView(forkUrl: forkUrl, repositoryName: repositoryName)
+    }
 }

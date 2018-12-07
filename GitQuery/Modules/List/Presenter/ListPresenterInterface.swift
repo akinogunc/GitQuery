@@ -6,8 +6,10 @@
 //  Copyright © 2018 Maruf Nebil Ogunc. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol ListPresenterInterface {
     func searchQuery(query: String)
+    func repositoryItemsArrayFromQuery(items: [RepositoryItem])
+    func showDetail(forkUrl: String, repositoryName: String)
 }
