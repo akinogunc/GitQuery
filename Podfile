@@ -7,6 +7,7 @@ target 'GitQuery' do
 
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'xModalController'
   
   target 'GitQueryTests' do
     inherit! :search_paths

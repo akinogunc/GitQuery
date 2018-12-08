@@ -2,20 +2,24 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
+  - xModalController (0.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - xModalController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - xModalController
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  xModalController: 501e428ae280aaac5f7a9f94e9e491c2ce26b19a
 
-PODFILE CHECKSUM: 2757397a44cf89bbb663344c6420730cb1b950e2
+PODFILE CHECKSUM: 3e456e4b166dedb2b8a3362160353c1dc3e8d7a4
 
 COCOAPODS: 1.5.3

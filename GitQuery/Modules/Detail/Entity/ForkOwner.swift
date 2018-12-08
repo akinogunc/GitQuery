@@ -13,7 +13,6 @@ struct ForkOwner {
     let loginName : String
     
     init(avatarUrl : String, loginName : String) {
-        
         self.avatarUrl = avatarUrl
         self.loginName = loginName
     }

@@ -11,18 +11,19 @@ import Alamofire
 
 class ListNetworkManager: NSObject {
 
-    func networkRequestWithQuery(query: String, completion: @escaping (NSArray) -> Void){
-        
-        let url = "https://api.github.com/search/repositories?q=" + query + "&page=1" + "&per_page=50"
+    func networkRequestWithQuery(query: String, page: Int, completion: @escaping (NSArray) -> Void){
+        print(page)
+        let url = "https://api.github.com/search/repositories?q=" + query + "&page=\(page)" + "&per_page=50"
         
         Alamofire.request(url).responseJSON { response in
             
             if let result = response.result.value {
                 let json = result as! [String : Any]
-                completion(json["items"] as! NSArray)
+                completion(json["items"] as? NSArray ?? NSArray())
             }
 
         }
     }
+    
 }
 

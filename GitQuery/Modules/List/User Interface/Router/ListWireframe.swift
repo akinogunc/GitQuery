@@ -17,6 +17,7 @@ class ListWireframe : NSObject {
     var rootWireframe : RootWireframe!
     var listView : ListViewController!
     var detailWireframe : DetailWireframe!
+    var loginWireframe : LoginWireframe!
 
     func presentListInterfaceFromWindow(window: UIWindow) {
         listView = listViewControllerFromStoryboard()
@@ -29,6 +30,10 @@ class ListWireframe : NSObject {
         detailWireframe.pushDetailViewControllerFrom(viewController: listView, forkUrl: forkUrl, repositoryName: repositoryName)
     }
     
+    func presentLoginView() {
+        loginWireframe.presentLoginModalFrom(viewController: listView)
+    }
+
     func listViewControllerFromStoryboard() -> ListViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateViewController(withIdentifier: ListViewControllerIdentifier) as! ListViewController

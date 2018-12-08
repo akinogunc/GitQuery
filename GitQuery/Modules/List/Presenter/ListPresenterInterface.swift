@@ -9,7 +9,8 @@
 import Foundation
 
 protocol ListPresenterInterface {
-    func searchQuery(query: String)
-    func repositoryItemsArrayFromQuery(items: [RepositoryItem])
+    func searchQuery(query: String, page: Int)
+    func repositoryItemsArrayToShow(items: [RepositoryItem])
     func showDetail(forkUrl: String, repositoryName: String)
+    func showLogin()
 }

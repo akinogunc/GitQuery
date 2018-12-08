@@ -29,10 +29,16 @@ class AppDependencies {
         let detailPresenter = DetailPresenter()
         let detailInteractor = DetailInteractor()
         
+        let loginWireframe = LoginWireframe()
+        let loginPresenter = LoginPresenter()
+        let loginInteractor = LoginInteractor()
+
+        //list modeule connections
         listWireframe.rootWireframe = rootWireframe
         listWireframe.listPresenter = listPresenter
         listWireframe.detailWireframe = detailWireframe
-        
+        listWireframe.loginWireframe = loginWireframe
+
         listPresenter.listWireframe = listWireframe
         listPresenter.listInteractor = listInteractor
         
@@ -46,5 +52,16 @@ class AppDependencies {
         detailWireframe.detailPresenter = detailPresenter
         
         detailInteractor.detailPresenter = detailPresenter
+        
+        //login module connections
+        loginPresenter.loginWireframe = loginWireframe
+        loginPresenter.loginInteractor = loginInteractor
+        loginPresenter.loginModuleDelegate = listPresenter
+        
+        loginWireframe.loginPresenter = loginPresenter
+        
+        loginInteractor.loginPresenter = loginPresenter
+
+        
     }
 }

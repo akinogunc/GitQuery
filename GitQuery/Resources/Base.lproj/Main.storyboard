@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -63,7 +64,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8z-6E-vec">
-                                            <rect key="frame" x="45" y="29" width="312" height="34"/>
+                                            <rect key="frame" x="45" y="31" width="312" height="32"/>
                                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -97,19 +98,19 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqr-b4-sUG">
-                                            <rect key="frame" x="64" y="77" width="40" height="16"/>
+                                            <rect key="frame" x="64" y="77" width="50" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="GiF-cD-5jC"/>
-                                                <constraint firstAttribute="width" constant="40" id="far-3K-EF7"/>
+                                                <constraint firstAttribute="width" constant="50" id="far-3K-EF7"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-kp-z2B">
-                                            <rect key="frame" x="178" y="77" width="40" height="15"/>
+                                            <rect key="frame" x="178" y="77" width="50" height="15"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="40" id="IUS-X7-QGU"/>
+                                                <constraint firstAttribute="width" constant="50" id="IUS-X7-QGU"/>
                                                 <constraint firstAttribute="height" constant="15" id="soM-jH-1Oc"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
@@ -117,10 +118,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYk-Ov-A88">
-                                            <rect key="frame" x="296" y="77" width="40" height="15"/>
+                                            <rect key="frame" x="296" y="77" width="50" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="Avt-tp-Gb0"/>
-                                                <constraint firstAttribute="width" constant="40" id="Na9-Xm-TSj"/>
+                                                <constraint firstAttribute="width" constant="50" id="Na9-Xm-TSj"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="15"/>
                                             <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,8 +135,8 @@
                                         <constraint firstItem="MHk-gJ-nje" firstAttribute="top" secondItem="H8z-6E-vec" secondAttribute="bottom" constant="13" id="CyZ-vN-sjJ"/>
                                         <constraint firstItem="qqr-b4-sUG" firstAttribute="leading" secondItem="MHk-gJ-nje" secondAttribute="trailing" constant="3" id="Etx-Dx-RdY"/>
                                         <constraint firstItem="MHk-gJ-nje" firstAttribute="leading" secondItem="qVh-F0-06b" secondAttribute="leading" constant="45" id="F3t-Zl-d83"/>
-                                        <constraint firstItem="ut9-J9-q0t" firstAttribute="leading" secondItem="gKf-kp-z2B" secondAttribute="trailing" constant="59" id="P9z-YN-7fd"/>
-                                        <constraint firstAttribute="trailing" secondItem="XYk-Ov-A88" secondAttribute="trailing" constant="39" id="Peb-1X-yyi"/>
+                                        <constraint firstItem="ut9-J9-q0t" firstAttribute="leading" secondItem="gKf-kp-z2B" secondAttribute="trailing" constant="49" id="P9z-YN-7fd"/>
+                                        <constraint firstAttribute="trailing" secondItem="XYk-Ov-A88" secondAttribute="trailing" constant="29" id="Peb-1X-yyi"/>
                                         <constraint firstItem="H8z-6E-vec" firstAttribute="leading" secondItem="MKz-P6-uG7" secondAttribute="trailing" constant="5" id="Rzg-m5-5Hm"/>
                                         <constraint firstItem="4vG-g1-zin" firstAttribute="leading" secondItem="MKz-P6-uG7" secondAttribute="trailing" constant="5" id="TYj-Kw-IJP"/>
                                         <constraint firstItem="XYk-Ov-A88" firstAttribute="leading" secondItem="ut9-J9-q0t" secondAttribute="trailing" constant="3" id="X15-ON-qzc"/>
@@ -144,13 +145,13 @@
                                         <constraint firstItem="MKz-P6-uG7" firstAttribute="top" secondItem="qVh-F0-06b" secondAttribute="top" constant="4" id="aus-Jw-7uo"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="H8z-6E-vec" secondAttribute="bottom" constant="27" id="e8x-DU-pXC"/>
                                         <constraint firstItem="qqr-b4-sUG" firstAttribute="leading" secondItem="MHk-gJ-nje" secondAttribute="trailing" constant="3" id="grQ-br-wOr"/>
-                                        <constraint firstItem="6EG-P6-326" firstAttribute="leading" secondItem="qqr-b4-sUG" secondAttribute="trailing" constant="55" id="hc6-v2-ooY"/>
+                                        <constraint firstItem="6EG-P6-326" firstAttribute="leading" secondItem="qqr-b4-sUG" secondAttribute="trailing" constant="45" id="hc6-v2-ooY"/>
                                         <constraint firstItem="6EG-P6-326" firstAttribute="top" secondItem="H8z-6E-vec" secondAttribute="bottom" constant="13" id="mti-mE-6ke"/>
                                         <constraint firstItem="MKz-P6-uG7" firstAttribute="leading" secondItem="qVh-F0-06b" secondAttribute="leading" constant="4" id="oRY-fO-1PT"/>
                                         <constraint firstItem="ut9-J9-q0t" firstAttribute="top" secondItem="H8z-6E-vec" secondAttribute="bottom" constant="13" id="sKL-35-4T5"/>
                                         <constraint firstAttribute="trailing" secondItem="4vG-g1-zin" secondAttribute="trailing" constant="2" id="t9C-du-7f7"/>
                                         <constraint firstItem="qqr-b4-sUG" firstAttribute="top" secondItem="H8z-6E-vec" secondAttribute="bottom" constant="14" id="tl6-Ld-4y9"/>
-                                        <constraint firstItem="H8z-6E-vec" firstAttribute="top" secondItem="qVh-F0-06b" secondAttribute="topMargin" constant="18" id="vM4-hx-qXv"/>
+                                        <constraint firstItem="H8z-6E-vec" firstAttribute="top" secondItem="qVh-F0-06b" secondAttribute="topMargin" constant="20" id="vM4-hx-qXv"/>
                                         <constraint firstItem="gKf-kp-z2B" firstAttribute="leading" secondItem="6EG-P6-326" secondAttribute="trailing" constant="3" id="yZI-kC-kcm"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -221,6 +222,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUJ-b6-fqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1269.5999999999999" y="135.38230884557723"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="kSu-f4-zqn">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="ezG-eB-wJM" customClass="LoginViewController" customModule="GitQuery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPU-Mw-MGD">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="340"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlF-1M-Yhv">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.51372549020000002" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f28-fJ-gKC">
+                                <rect key="frame" x="16" y="97" width="268" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ezG-eB-wJM" id="8wb-JC-0Qi"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-eV-OHJ">
+                                <rect key="frame" x="16" y="166" width="268" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ezG-eB-wJM" id="rvY-9k-xoc"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-vd-c40">
+                                <rect key="frame" x="16" y="281" width="120" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="18"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel" destination="ezG-eB-wJM" eventType="touchUpInside" id="XjD-SQ-6ZX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4C-DT-Md2">
+                                <rect key="frame" x="164" y="281" width="120" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33715406339999998" green="0.69157029540000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="18"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login" destination="ezG-eB-wJM" eventType="touchUpInside" id="sb3-qT-Tgz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-Mr-hRf">
+                                <rect key="frame" x="55" y="232" width="229" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-gn-L3S">
+                                <rect key="frame" x="16" y="232" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <action selector="rememberMe" destination="ezG-eB-wJM" eventType="touchUpInside" id="hRn-7X-afU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2xG-gW-mOq"/>
+                    </view>
+                    <size key="freeformSize" width="300" height="340"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="hYo-eV-OHJ" id="Mon-5F-qrm"/>
+                        <outlet property="rememberButton" destination="LI3-gn-L3S" id="uXB-QU-nhh"/>
+                        <outlet property="usernameTextField" destination="f28-fJ-gKC" id="Jwg-Mi-mdC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e7-KI-CeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132.8000000000002" y="135.832083958021"/>
         </scene>
     </scenes>
     <resources>
