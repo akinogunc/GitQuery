@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import PKHUD
 
 let ListViewControllerIdentifier = "ListViewController"
 
@@ -40,4 +41,24 @@ class ListWireframe : NSObject {
         return viewController
     }
     
+    func showAlertView(error: String){
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler: nil))
+        listView.present(alert, animated: true, completion: nil)
+    }
+    
+    func showNoResultAlert(){
+        PKHUD.sharedHUD.contentView = PKHUDTextView(text: "No Result")
+        PKHUD.sharedHUD.show()
+        PKHUD.sharedHUD.hide(afterDelay: 1.0)
+    }
+    
+    func showLoadingIndicator(){
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
+    }
+    
+    func hideLoadingIndicator() {
+        PKHUD.sharedHUD.hide()
+    }
 }

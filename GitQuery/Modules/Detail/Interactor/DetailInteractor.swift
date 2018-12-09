@@ -13,10 +13,23 @@ class DetailInteractor: NSObject, DetailInteractorInput {
     var detailPresenter : DetailPresenterInterface!
     let networkManager = DetailNetworkManager()
 
-    func sendNetworkRequest(forkUrl: String) {
+    func sendNetworkRequest(forkUrl: String, type: QueryType) {
         
-        networkManager.networkRequestWithUrl(url: forkUrl, completion: {response in
-           self.detailPresenter.forkOwnersArrayFromRequest(items: self.fromJsonToForkOwners(jsonArray: response))
+        networkManager.networkRequestWithUrl(url: forkUrl, type: type, completion: {connectionResult in
+            
+            switch connectionResult {
+            case .success(let response):
+                
+                if type == QueryType.firstQuery{
+                    self.detailPresenter.forkOwnersArrayToShow(items: self.fromJsonToForkOwners(jsonArray: response))
+                }else{
+                    self.detailPresenter.forkOwnersArrayToAppend(items: self.fromJsonToForkOwners(jsonArray: response))
+                }
+
+            case .failure(let error):
+                self.detailPresenter.showErrorAlert(error: error)
+            }
+
         })
 
     }

@@ -10,5 +10,6 @@ import Foundation
 
 protocol DetailViewInterface {
     func showForkOwners(items: [ForkOwner])
+    func appendForkOwners(items: [ForkOwner])
     func setTitle(repositoryName: String)
 }

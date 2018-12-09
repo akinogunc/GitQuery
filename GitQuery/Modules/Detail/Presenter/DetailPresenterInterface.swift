@@ -7,5 +7,8 @@
 //
 
 protocol DetailPresenterInterface {
-    func forkOwnersArrayFromRequest(items: [ForkOwner])
+    func forkOwnersArrayToShow(items: [ForkOwner])
+    func forkOwnersArrayToAppend(items: [ForkOwner])
+    func showErrorAlert(error: String)
+    func makeNetworkRequestForForks(forkUrl: String, type: QueryType)
 }

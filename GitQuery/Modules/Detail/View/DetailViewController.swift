@@ -13,6 +13,7 @@ class DetailViewController: UITableViewController, DetailViewInterface {
 
     var detailPresenter : DetailPresenterInterface!
     var forkOwners = [ForkOwner]()
+    var loadMoreEnabled = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,17 @@ class DetailViewController: UITableViewController, DetailViewInterface {
 
     func showForkOwners(items: [ForkOwner]) {
         forkOwners = items
+        reloadForkOwners()
+        enableLoadMore()
+    }
+    
+    func appendForkOwners(items: [ForkOwner]) {
+        forkOwners.append(contentsOf: items)
+        reloadForkOwners()
+        enableLoadMore()
+    }
+
+    func reloadForkOwners() {
         tableView.reloadData()
     }
     
@@ -52,5 +64,22 @@ class DetailViewController: UITableViewController, DetailViewInterface {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let nearBottom = (indexPath.row == forkOwners.count - 5)
+        
+        if loadMoreEnabled && nearBottom{//load more near bottom
+            disableLoadMore()
+            detailPresenter.makeNetworkRequestForForks(forkUrl: "", type: .loadMore)
+        }
+    }
+    
+    func disableLoadMore(){
+        loadMoreEnabled = false
+    }
+    
+    func enableLoadMore(){
+        loadMoreEnabled = true
+    }
 
 }

@@ -9,9 +9,9 @@
 import Foundation
 
 protocol LoginPresenterInterface {
-    func login(credentials: Credential)
+    func login(credentials: Credential, remember: Bool)
     func cancelLoginAction()
     func sendRepositoriesDataToListModule(repos: NSArray)
-    func saveCredentials(credentials: Credential)
     func getSavedCredentials() -> Credential
+    func showErrorAlert(error: String)
 }

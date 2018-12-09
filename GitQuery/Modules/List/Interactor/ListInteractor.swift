@@ -14,9 +14,22 @@ class ListInteractor: NSObject, ListInteractorInput {
     var listPresenter : ListPresenterInterface!
     let networkManager = ListNetworkManager()
 
-    func sendNetworkRequest(query: String, page: Int) {
-        networkManager.networkRequestWithQuery(query: query, page: page, completion: {response in
-            self.listPresenter?.repositoryItemsArrayToShow(items: self.fromJsonToRepositoryItems(jsonArray: response))
+    func sendNetworkRequest(query: String, type: QueryType) {
+        networkManager.networkRequestWithQuery(query: query, type: type, completion: {connectionResult in
+            
+            switch connectionResult {
+            case .success(let response):
+                
+                if type == QueryType.firstQuery{
+                    self.listPresenter?.repositoryItemsArrayToShow(items: self.fromJsonToRepositoryItems(jsonArray: response))
+                }else{
+                    self.listPresenter?.repositoryItemsArrayToAppend(items: self.fromJsonToRepositoryItems(jsonArray: response))
+                }
+                
+            case .failure(let error):
+                self.listPresenter.showErrorAlert(error: error)
+            }
+
         })
     }
     

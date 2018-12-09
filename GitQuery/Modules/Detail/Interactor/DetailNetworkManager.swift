@@ -11,14 +11,40 @@ import Alamofire
 
 class DetailNetworkManager: NSObject {
 
-    func networkRequestWithUrl(url: String, completion: @escaping (NSArray) -> Void){
+    var currentPage = 1
+    var forkUrl = "" //we need to save the url on the first query for pagination
+    
+    func networkRequestWithUrl(url: String, type: QueryType, completion: @escaping (ConnectionResult) -> Void){
         
-        Alamofire.request(url).responseJSON { response in
+        if type == QueryType.firstQuery{
+            currentPage = 1
+            forkUrl = url
+        }else{
+            currentPage += 1
+        }
+
+        let urlWithPagination = forkUrl + "?page=\(currentPage)" + "&per_page=50"
+
+        Alamofire.request(urlWithPagination).responseJSON { response in
             
-            if let result = response.result.value {
-                completion(result as! NSArray)
+            switch response.result {
+            case .success:
+                
+                if let result = response.result.value {
+                    
+                    if (response.response?.statusCode)! > 400{// 401 Unauthorized, 403 Forbidden(Rate limit)
+                        let resultDict = result as! NSDictionary
+                        completion(.failure(resultDict["message"] as! String))
+                    }else{
+                        completion(.success(result as? NSArray ?? NSArray()))
+                    }
+                    
+                }
+                
+            case .failure(let error):
+                completion(.failure(error.localizedDescription))
             }
-            
+
         }
     }
 

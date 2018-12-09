@@ -14,10 +14,25 @@ class LoginInteractor: NSObject, LoginInteractorInput {
     var loginPresenter : LoginPresenterInterface!
     let networkManager = LoginNetworkManager()
     
-    func sendNetworkRequest(credentials: Credential) {
+    func sendNetworkRequest(credentials: Credential, remember: Bool) {
         
-        networkManager.loginAndGetRepositories(credentials: credentials, completion: {response in
-            self.loginPresenter.sendRepositoriesDataToListModule(repos: response)
+        networkManager.loginAndGetRepositories(credentials: credentials, completion: {connectionResult in
+            
+            switch connectionResult {
+            case .success(let response):
+                self.loginPresenter.sendRepositoriesDataToListModule(repos: response)
+                
+                if remember{
+                    self.saveCredentials(credentials: credentials)
+                }else{
+                    self.doNotRemember()
+                }
+                
+            case .failure(let error):
+                self.loginPresenter.showErrorAlert(error: error)
+                self.doNotRemember()
+            }
+
         })
     }
     
@@ -40,4 +55,10 @@ class LoginInteractor: NSObject, LoginInteractorInput {
         }
 
     }
+    
+    func doNotRemember() {
+        UserDefaults.standard.set(false, forKey: "remember_me")
+        UserDefaults.standard.synchronize()
+    }
+
 }

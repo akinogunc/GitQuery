@@ -34,13 +34,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate, LoginViewInter
     }
     
     @IBAction func login() {
-        let credentials = Credential(username: usernameTextField.text!, password: passwordTextField.text!)
         
-        loginPresenter.login(credentials: credentials)
-        
-        if rememberButton.isSelected{
-            loginPresenter.saveCredentials(credentials: credentials)
+        if (usernameTextField.text! == "" || passwordTextField.text! == ""){
+            loginPresenter.showErrorAlert(error: "Please enter your Username and Password")
+        }else{
+            
+            let credentials = Credential(username: usernameTextField.text!, password: passwordTextField.text!)
+            loginPresenter.login(credentials: credentials, remember: rememberButton.isSelected)
         }
+        
     }
     
     @IBAction func cancel() {

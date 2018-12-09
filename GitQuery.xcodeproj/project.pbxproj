@@ -21,11 +21,19 @@
 		F4254D6721BC218400E023B6 /* LoginModuleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D6621BC218400E023B6 /* LoginModuleDelegate.swift */; };
 		F4254D6921BC2E3500E023B6 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D6821BC2E3500E023B6 /* Credential.swift */; };
 		F4254D6A21BC424E00E023B6 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82F7721B9967B00266E42 /* ListViewController.swift */; };
+		F4254D6C21BD045600E023B6 /* ConnectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D6B21BD045600E023B6 /* ConnectionResult.swift */; };
+		F4254D6E21BD162200E023B6 /* Base64String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D6D21BD162200E023B6 /* Base64String.swift */; };
+		F4254D7021BD3EE100E023B6 /* QueryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D6F21BD3EE100E023B6 /* QueryType.swift */; };
+		F4254D7221BD467600E023B6 /* ListNetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D7121BD467600E023B6 /* ListNetworkManagerTests.swift */; };
+		F4254D7421BD526F00E023B6 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D7321BD526F00E023B6 /* LoginInteractorTests.swift */; };
+		F4254D7621BD545000E023B6 /* LoginNetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D7521BD545000E023B6 /* LoginNetworkManagerTests.swift */; };
+		F4254D7821BD689000E023B6 /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D7721BD689000E023B6 /* DetailInteractorTests.swift */; };
+		F4254D7A21BD6A6400E023B6 /* DetailNetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4254D7921BD6A6400E023B6 /* DetailNetworkManagerTests.swift */; };
 		F4B82F7621B9967B00266E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82F7521B9967B00266E42 /* AppDelegate.swift */; };
 		F4B82F7B21B9967B00266E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B82F7921B9967B00266E42 /* Main.storyboard */; };
 		F4B82F7D21B9967C00266E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B82F7C21B9967C00266E42 /* Assets.xcassets */; };
 		F4B82F8021B9967C00266E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B82F7E21B9967C00266E42 /* LaunchScreen.storyboard */; };
-		F4B82F8B21B9967C00266E42 /* GitQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82F8A21B9967C00266E42 /* GitQueryTests.swift */; };
+		F4B82F8B21B9967C00266E42 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82F8A21B9967C00266E42 /* ListInteractorTests.swift */; };
 		F4B82F9621B9967C00266E42 /* GitQueryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82F9521B9967C00266E42 /* GitQueryUITests.swift */; };
 		F4B82FB021B99F2600266E42 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FAF21B99F2600266E42 /* RootWireframe.swift */; };
 		F4B82FB221B99FA600266E42 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B82FB121B99FA600266E42 /* AppDependencies.swift */; };
@@ -89,6 +97,14 @@
 		F4254D6421BC1A4B00E023B6 /* LoginPresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterInterface.swift; sourceTree = "<group>"; };
 		F4254D6621BC218400E023B6 /* LoginModuleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleDelegate.swift; sourceTree = "<group>"; };
 		F4254D6821BC2E3500E023B6 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		F4254D6B21BD045600E023B6 /* ConnectionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionResult.swift; sourceTree = "<group>"; };
+		F4254D6D21BD162200E023B6 /* Base64String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64String.swift; sourceTree = "<group>"; };
+		F4254D6F21BD3EE100E023B6 /* QueryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryType.swift; sourceTree = "<group>"; };
+		F4254D7121BD467600E023B6 /* ListNetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNetworkManagerTests.swift; sourceTree = "<group>"; };
+		F4254D7321BD526F00E023B6 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		F4254D7521BD545000E023B6 /* LoginNetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkManagerTests.swift; sourceTree = "<group>"; };
+		F4254D7721BD689000E023B6 /* DetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
+		F4254D7921BD6A6400E023B6 /* DetailNetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNetworkManagerTests.swift; sourceTree = "<group>"; };
 		F4B82F7221B9967B00266E42 /* GitQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B82F7521B9967B00266E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B82F7721B9967B00266E42 /* ListViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +113,7 @@
 		F4B82F7F21B9967C00266E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B82F8121B9967C00266E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B82F8621B9967C00266E42 /* GitQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4B82F8A21B9967C00266E42 /* GitQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitQueryTests.swift; sourceTree = "<group>"; };
+		F4B82F8A21B9967C00266E42 /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
 		F4B82F8C21B9967C00266E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B82F9121B9967C00266E42 /* GitQueryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitQueryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B82F9521B9967C00266E42 /* GitQueryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitQueryUITests.swift; sourceTree = "<group>"; };
@@ -270,7 +286,12 @@
 		F4B82F8921B9967C00266E42 /* GitQueryTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4B82F8A21B9967C00266E42 /* GitQueryTests.swift */,
+				F4B82F8A21B9967C00266E42 /* ListInteractorTests.swift */,
+				F4254D7121BD467600E023B6 /* ListNetworkManagerTests.swift */,
+				F4254D7321BD526F00E023B6 /* LoginInteractorTests.swift */,
+				F4254D7521BD545000E023B6 /* LoginNetworkManagerTests.swift */,
+				F4254D7721BD689000E023B6 /* DetailInteractorTests.swift */,
+				F4254D7921BD6A6400E023B6 /* DetailNetworkManagerTests.swift */,
 				F4B82F8C21B9967C00266E42 /* Info.plist */,
 			);
 			path = GitQueryTests;
@@ -429,6 +450,9 @@
 			children = (
 				F4B82FE921BAA60300266E42 /* CircleImageView.swift */,
 				F4B82FAF21B99F2600266E42 /* RootWireframe.swift */,
+				F4254D6B21BD045600E023B6 /* ConnectionResult.swift */,
+				F4254D6F21BD3EE100E023B6 /* QueryType.swift */,
+				F4254D6D21BD162200E023B6 /* Base64String.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -574,12 +598,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitQuery/Pods-GitQuery-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/xModalController/xModalController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xModalController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,7 +683,9 @@
 				F4B82FC121B9D05400266E42 /* RepositoryItem.swift in Sources */,
 				F4B82FB421B9A03F00266E42 /* ListWireframe.swift in Sources */,
 				F4B82FB221B99FA600266E42 /* AppDependencies.swift in Sources */,
+				F4254D6E21BD162200E023B6 /* Base64String.swift in Sources */,
 				F4254D6721BC218400E023B6 /* LoginModuleDelegate.swift in Sources */,
+				F4254D6C21BD045600E023B6 /* ConnectionResult.swift in Sources */,
 				F4B82FBF21B9C2F800266E42 /* ListInteractorInterface.swift in Sources */,
 				F4254D5F21BC1A1000E023B6 /* LoginViewInterface.swift in Sources */,
 				F4B82FEA21BAA60300266E42 /* CircleImageView.swift in Sources */,
@@ -676,6 +704,7 @@
 				F4B82FDF21BA9C3000266E42 /* DetailNetworkManager.swift in Sources */,
 				F4B82FDD21BA9C1D00266E42 /* DetailInteractor.swift in Sources */,
 				F4B82FEC21BAA7F500266E42 /* ForkOwnerCell.swift in Sources */,
+				F4254D7021BD3EE100E023B6 /* QueryType.swift in Sources */,
 				F4254D6521BC1A4B00E023B6 /* LoginPresenterInterface.swift in Sources */,
 				F4B82FD921BA943E00266E42 /* DetailViewController.swift in Sources */,
 				F4B82FE321BA9C6C00266E42 /* DetailInteractorInterface.swift in Sources */,
@@ -689,7 +718,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B82F8B21B9967C00266E42 /* GitQueryTests.swift in Sources */,
+				F4254D7821BD689000E023B6 /* DetailInteractorTests.swift in Sources */,
+				F4254D7A21BD6A6400E023B6 /* DetailNetworkManagerTests.swift in Sources */,
+				F4254D7221BD467600E023B6 /* ListNetworkManagerTests.swift in Sources */,
+				F4254D7421BD526F00E023B6 /* LoginInteractorTests.swift in Sources */,
+				F4254D7621BD545000E023B6 /* LoginNetworkManagerTests.swift in Sources */,
+				F4B82F8B21B9967C00266E42 /* ListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

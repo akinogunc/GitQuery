@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DetailInteractorInput {
-    func sendNetworkRequest(forkUrl: String)
+    func sendNetworkRequest(forkUrl: String, type: QueryType)
 }

@@ -14,13 +14,14 @@ class LoginPresenter: NSObject, LoginPresenterInterface {
     var loginWireframe : LoginWireframe!
     var loginInteractor : LoginInteractorInput!
     var loginModuleDelegate : LoginModuleDelegate!
-
-    func login(credentials: Credential){
-        loginInteractor.sendNetworkRequest(credentials: credentials)
+    
+    func login(credentials: Credential, remember: Bool){
+        loginInteractor.sendNetworkRequest(credentials: credentials, remember: remember)
     }
     
     func sendRepositoriesDataToListModule(repos: NSArray) {
         loginModuleDelegate.loggedInAndRetrievedRepositories(repos: repos)
+        loginWireframe.showSuccessAlert()
         loginWireframe.dismissModal()
     }
     
@@ -31,8 +32,9 @@ class LoginPresenter: NSObject, LoginPresenterInterface {
     func getSavedCredentials() -> Credential {
         return loginInteractor.getCredentials()
     }
-    
-    func saveCredentials(credentials: Credential) {
-        loginInteractor.saveCredentials(credentials: credentials)
+        
+    func showErrorAlert(error: String){
+        loginWireframe.showAlertView(error: error)
     }
+
 }

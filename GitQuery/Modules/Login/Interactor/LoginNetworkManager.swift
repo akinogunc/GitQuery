@@ -11,23 +11,33 @@ import Alamofire
 
 class LoginNetworkManager: NSObject {
     
-    func loginAndGetRepositories(credentials: Credential, completion: @escaping (NSArray) -> Void){
+    func loginAndGetRepositories(credentials: Credential, completion: @escaping (ConnectionResult) -> Void){
         
         let url = "https://api.github.com/user/repos"
         let credential = credentials.username + ":" + credentials.password
-        let headers = ["Authorization": "Basic \(base64String(credential: credential))"]
+        let headers = ["Authorization": "Basic \(credential.base64String())"]
         
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-            if let result = response.result.value {
-                completion(result as! NSArray)
+
+            switch response.result {
+            case .success:
+                
+                if let result = response.result.value {
+                    
+                    if (response.response?.statusCode)! > 400{// 401 Unauthorized, 403 Forbidden
+                        let resultDict = result as! NSDictionary
+                        completion(.failure(resultDict["message"] as! String))
+                    }else{
+                        completion(.success(result as? NSArray ?? NSArray()))
+                    }
+                    
+                }
+                
+            case .failure(let error):
+                completion(.failure(error.localizedDescription))
             }
 
         }
     }
-    
-    func base64String(credential: String) -> String {
-        let data = credential.data(using: String.Encoding.utf8)
-        let base64 = data!.base64EncodedString(options: Data.Base64EncodingOptions(rawValue: 0))
-        return base64
-    }
+        
 }

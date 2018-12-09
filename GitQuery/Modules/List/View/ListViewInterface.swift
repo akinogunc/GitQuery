@@ -10,4 +10,5 @@ import Foundation
 
 protocol ListViewInterface {
     func showRepositoryItems(items: [RepositoryItem])
+    func appendRepositoryItems(items: [RepositoryItem])
 }

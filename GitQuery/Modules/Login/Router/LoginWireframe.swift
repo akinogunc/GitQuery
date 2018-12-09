@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import xModalController
+import PKHUD
 
 let LoginViewControllerIdentifier = "LoginViewController"
 
@@ -29,7 +30,7 @@ class LoginWireframe : NSObject {
     }
     
     func dismissModal() {
-        loginView.dismiss(animated: true, completion: nil)
+        self.loginView.dismiss(animated: true, completion: nil)
     }
     
     func loginViewControllerFromStoryboard() -> LoginViewController {
@@ -38,4 +39,15 @@ class LoginWireframe : NSObject {
         return viewController
     }
 
+    func showAlertView(error: String){
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler: nil))
+        loginView.present(alert, animated: true, completion: nil)
+    }
+
+    func showSuccessAlert() {
+        PKHUD.sharedHUD.contentView = PKHUDSuccessView()
+        PKHUD.sharedHUD.show()
+        PKHUD.sharedHUD.hide(afterDelay: 1.0)
+    }
 }

@@ -9,7 +9,6 @@
 import Foundation
 
 protocol LoginInteractorInput {
-    func sendNetworkRequest(credentials: Credential)
-    func saveCredentials(credentials: Credential)
+    func sendNetworkRequest(credentials: Credential, remember: Bool)
     func getCredentials() -> Credential
 }

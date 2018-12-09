@@ -7,33 +7,30 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForAnalyzing = "YES"
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D81EC1AE4681C8E7493EBBC4B2ABF0D0"
-               BuildableName = "Pods_GitQuery.framework"
-               BlueprintName = "Pods-GitQuery"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "B0A904AA2B910FFDB150F671A2DAA8F4"
+               BlueprintName = "PKHUD"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "PKHUD.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -41,25 +38,17 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
+      buildConfiguration = "Debug"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D81EC1AE4681C8E7493EBBC4B2ABF0D0"
-            BuildableName = "Pods_GitQuery.framework"
-            BlueprintName = "Pods-GitQuery"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES">
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

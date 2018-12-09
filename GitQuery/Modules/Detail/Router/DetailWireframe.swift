@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 let DetailViewControllerIdentifier = "DetailViewController"
 
@@ -22,7 +23,7 @@ class DetailWireframe: NSObject {
         detailView.detailPresenter = detailPresenter
         detailPresenter.detailView = detailView
 
-        detailPresenter.makeNetworkRequestForForks(forkUrl: forkUrl)
+        detailPresenter.makeNetworkRequestForForks(forkUrl: forkUrl, type: .firstQuery)
         detailPresenter.setDetailViewTitle(repositoryName: repositoryName)
 
         let navigationController = viewController.navigationController
@@ -33,6 +34,21 @@ class DetailWireframe: NSObject {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateViewController(withIdentifier: DetailViewControllerIdentifier) as! DetailViewController
         return viewController
+    }
+
+    func showAlertView(error: String){
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler: nil))
+        detailView.present(alert, animated: true, completion: nil)
+    }
+
+    func showLoadingIndicator(){
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
+    }
+    
+    func hideLoadingIndicator() {
+        PKHUD.sharedHUD.hide()
     }
 
 }

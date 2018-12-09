@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ListInteractorInput {
-    func sendNetworkRequest(query: String, page: Int)
+    func sendNetworkRequest(query: String, type: QueryType)
     func prepareRetrievedRepositories(repos: NSArray)
 }
 

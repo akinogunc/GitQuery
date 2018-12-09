@@ -14,15 +14,35 @@ class DetailPresenter: NSObject, DetailPresenterInterface {
     var detailWireframe : DetailWireframe!
     var detailInteractor : DetailInteractorInput!
 
-    func makeNetworkRequestForForks(forkUrl: String){
-        detailInteractor.sendNetworkRequest(forkUrl: forkUrl)
+    func makeNetworkRequestForForks(forkUrl: String, type: QueryType){
+        detailInteractor.sendNetworkRequest(forkUrl: forkUrl, type: type)
+        
+        if type == .firstQuery{
+            detailWireframe.showLoadingIndicator()
+        }
+
     }
 
-    func forkOwnersArrayFromRequest(items: [ForkOwner]) {
-        detailView.showForkOwners(items: items)
+    func forkOwnersArrayToShow(items: [ForkOwner]) {
+        if items.count > 0{
+            detailView.showForkOwners(items: items)
+        }
+        
+        detailWireframe.hideLoadingIndicator()
+    }
+
+    func forkOwnersArrayToAppend(items: [ForkOwner]) {
+        if items.count > 0{
+            detailView.appendForkOwners(items: items)
+        }
     }
 
     func setDetailViewTitle(repositoryName: String){
         detailView.setTitle(repositoryName: repositoryName)
     }
+    
+    func showErrorAlert(error: String){
+        detailWireframe.showAlertView(error: error)
+    }
+
 }

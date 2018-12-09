@@ -14,14 +14,32 @@ class ListPresenter: NSObject, ListPresenterInterface, LoginModuleDelegate {
     var listWireframe : ListWireframe!
     var listInteractor : ListInteractorInput!
 
-    func searchQuery(query: String, page: Int){
-        listInteractor.sendNetworkRequest(query: query, page: page)
+    func searchQuery(query: String, type: QueryType){
+        listInteractor.sendNetworkRequest(query: query, type: type)
+        
+        if type == .firstQuery{
+            listWireframe.showLoadingIndicator()
+        }
     }
 
     func repositoryItemsArrayToShow(items: [RepositoryItem]){
-        listView.showRepositoryItems(items: items)
+        
+        if items.count == 0{
+            listWireframe.showNoResultAlert()
+        }else{
+            listView.showRepositoryItems(items: items)
+        }
+        
+        listWireframe.hideLoadingIndicator()
     }
     
+    func repositoryItemsArrayToAppend(items: [RepositoryItem]){
+        
+        if items.count>0{
+            listView.appendRepositoryItems(items: items)
+        }
+    }
+
     func showDetail(forkUrl: String, repositoryName: String) {
         listWireframe.pushDetailView(forkUrl: forkUrl, repositoryName: repositoryName)
     }
@@ -34,4 +52,7 @@ class ListPresenter: NSObject, ListPresenterInterface, LoginModuleDelegate {
         listInteractor.prepareRetrievedRepositories(repos: repos)
     }
     
+    func showErrorAlert(error: String){
+        listWireframe.showAlertView(error: error)
+    }
 }

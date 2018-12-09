@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D81EC1AE4681C8E7493EBBC4B2ABF0D0"
-               BuildableName = "Pods_GitQuery.framework"
-               BlueprintName = "Pods-GitQuery"
+               BlueprintIdentifier = "3A09979172F37020AB3D778731BFDEBE"
+               BuildableName = "PKHUDResources.bundle"
+               BlueprintName = "PKHUD-PKHUDResources"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D81EC1AE4681C8E7493EBBC4B2ABF0D0"
-            BuildableName = "Pods_GitQuery.framework"
-            BlueprintName = "Pods-GitQuery"
+            BlueprintIdentifier = "3A09979172F37020AB3D778731BFDEBE"
+            BuildableName = "PKHUDResources.bundle"
+            BlueprintName = "PKHUD-PKHUDResources"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
