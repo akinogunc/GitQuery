@@ -29,9 +29,8 @@ class ListPresenter: NSObject, ListPresenterInterface, LoginModuleDelegate {
             listView.clearRepositoryData()
         }else{
             listView.showRepositoryItems(items: items)
+            listWireframe.hideLoadingIndicator()
         }
-        
-        listWireframe.hideLoadingIndicator()
     }
     
     func repositoryItemsArrayToAppend(items: [RepositoryItem]){
