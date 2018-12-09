@@ -38,6 +38,7 @@ class ListViewController: UITableViewController, UISearchBarDelegate, ListViewIn
 
     
     @objc func didTapMyRepos(){
+        searchBar.resignFirstResponder()
         disableLoadMore()
         listPresenter.showLogin()
     }
