@@ -56,6 +56,7 @@ class ListViewController: UITableViewController, UISearchBarDelegate, ListViewIn
     func showRepositoryItems(items: [RepositoryItem]) {//first search
         repositoryItems = items
         reloadRepositories()
+        scrollToTop()
     }
     
     func appendRepositoryItems(items: [RepositoryItem]) {//load more
@@ -64,6 +65,16 @@ class ListViewController: UITableViewController, UISearchBarDelegate, ListViewIn
         enableLoadMore()
     }
     
+    func clearRepositoryData(){
+        repositoryItems = [RepositoryItem]()
+        reloadRepositories()
+    }
+    
+    func scrollToTop() {
+        let topIndex = IndexPath(row: 0, section: 0)
+        tableView.scrollToRow(at: topIndex, at: .top, animated: true)
+    }
+
     func reloadRepositories() {
         tableView.reloadData()
     }

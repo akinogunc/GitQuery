@@ -26,6 +26,7 @@ class ListPresenter: NSObject, ListPresenterInterface, LoginModuleDelegate {
         
         if items.count == 0{
             listWireframe.showNoResultAlert()
+            listView.clearRepositoryData()
         }else{
             listView.showRepositoryItems(items: items)
         }

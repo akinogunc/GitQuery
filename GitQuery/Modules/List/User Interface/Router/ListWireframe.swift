@@ -50,7 +50,7 @@ class ListWireframe : NSObject {
     func showNoResultAlert(){
         PKHUD.sharedHUD.contentView = PKHUDTextView(text: "No Result")
         PKHUD.sharedHUD.show()
-        PKHUD.sharedHUD.hide(afterDelay: 1.0)
+        PKHUD.sharedHUD.hide(afterDelay: 2.0)
     }
     
     func showLoadingIndicator(){
