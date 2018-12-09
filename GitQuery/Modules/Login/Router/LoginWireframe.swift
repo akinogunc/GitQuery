@@ -24,7 +24,7 @@ class LoginWireframe : NSObject {
         loginView.loginPresenter = loginPresenter
         loginPresenter.loginView = loginView
         
-        let modalFrame = CGRect(x: (viewController.view.bounds.width-300)/2, y: 150, width: 300, height: 340)
+        let modalFrame = CGRect(x: (viewController.view.bounds.width-300)/2, y: 100, width: 300, height: 340)
         let modalController = xModalController(parentViewController: viewController, modalViewController: loginView, modalFrame: modalFrame)
         modalController.showModal()
     }
